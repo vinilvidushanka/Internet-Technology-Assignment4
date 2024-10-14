@@ -1,0 +1,27 @@
+body{
+    margin-left: 0;
+}
+.box{
+    box-shadow: 3px 3px 3px 3px gray;
+    border-radius: 5px;
+    padding:0 12px;
+    width: 200px;
+    height: 50px;
+    margin-top: 10vh;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    & p{
+        color: white;
+    }
+
+    position: relative;
+    left: -150px;
+
+    transition: left 1s ease-in-out ;
+    cursor: pointer;
+}
+.box:hover{
+    left: -5px;
+
+}

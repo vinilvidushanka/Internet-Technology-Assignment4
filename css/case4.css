@@ -1,0 +1,25 @@
+.Circle {
+    height: 1px;
+    width: 1px;
+    border: 10px solid rgb(255, 0, 0);
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: 100%;
+    animation: myAni 2s infinite;
+  }
+  
+  @keyframes myAni {
+    from {
+      height: 1px;
+      width: 1px;
+    }
+    to {
+      height: 500px;
+      width: 500px;
+      border: 4px solid rgb(255, 255, 255);
+    }
+  }

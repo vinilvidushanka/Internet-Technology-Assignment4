@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  figure {
+    position: relative;
+    left: 0;
+    width: 500%;
+    animation: 10s slide infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      left: -400%;
+    }
+    20% {
+      left: -300%;
+    }
+    30% {
+      left: -300%;
+    }
+    45% {
+      left: -200%;
+    }
+    50% {
+      left: -200%;
+    }
+    60% {
+      left: -100%;
+    }
+    75% {
+      left: -200%;
+    }
+    85% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+  }
+  
+  .slide {
+    width: 20%;
+    height: 100vh;
+    position: relative;
+    float: right;
+  }
+  .slider img {
+    width: 100%;
+    height: 100vh;
+  }

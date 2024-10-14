@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+.box{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 10px;
+    position: relative;
+
+
+    animation: go-around 2s linear infinite;
+}
+
+@keyframes go-around {
+    0%{
+        top: 0;
+        left: 0;
+        background-color: blue;
+    }
+    25%{
+        top: 0;
+        left: calc(100% - 200px);
+        transform: rotate(180deg);
+        background-color: yellow;
+    }
+    50%{
+        top: calc(100% - 200px);
+        left: calc(100%  - 200px);
+        background-color: red;
+    }
+    75%{
+        top: calc(100% - 200px);
+        left: 0;
+        background-color: palevioletred;
+        transform: rotate(-180deg);
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background-color: orangered;
+    }
+    
+}
